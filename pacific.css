@@ -1,46 +1,130 @@
+/* Reset default */
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
-	display: block;
-}
-body {
-	background-image: "ptrbackground.jpg";
-	background-color: white;
-	color: #666666;
-	font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul {
-	margin: 0;
-	padding: 0;
-	width: 20%;
-	background-color: lightblue;
-	font-size: 1.2em;
+/* Base styles for the entire page */
+body {
+    background-color: #00569f;
+    background-image: url("ptrbackground.jpg");
+    font-family: Arial, Helvetica, sans-serif;
 }
-nav a:visited {
-	color: #344873;
+
+/* Makes background image for header */
+header {
+    background-image: url("sunset.jpg");
+    background-position: center;
+    background-size: cover;
 }
-nav a:hover {
-	color: #FFFFFF;
-}
+
+/* Makes changes to text in header */
 h1 {
-	background-image: "sunset.jpg";
-	
-	color: white;
-	margin-bottom: 0;
-	padding: 10px;
+    color: white;
+    margin: 0;
+    padding: 10px;
 }
+
+/* Has second heading "Enjoy Nature..." in blue */
 h2 {
-	color: #3399CC;
+    color: #3399CC;
 }
-h1,
-h2 {
-	font-family: Georgia, "Times New Roman", serif;
+
+/* Changes font used for headings */
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
 }
+
+p {
+    padding-right: 20px;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Removes normal bullet from lists */
+ul {
+    list-style-type: none;
+}
+
+/* Changes normal bullet to special bullet */
+li {
+    list-style-image: url("marker.gif");
+    list-style-position: inside;
+    text-indent: 20px;
+}
+
+/* Sidebar navigation styles */
+nav {
+    background-color: #90c8e3;
+    float: left;
+    height: 60vh;
+    margin-right: 20px;
+    min-height: 701.5px;
+    padding-top: 20px;
+    width: 200px;
+}
+
+/* Reset list styles for the navigation menu */
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 21px;
+    list-style-image: none;
+    padding-left: 20px;
+    text-indent: 0px;
+}
+
+nav a {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+/* Changes text to make "Pacific Trails Resort" special */
+.resort {
+    color: #6c8092;
+    font-weight: bold;
+}
+
+/* Changes the main body of the website */
+#wrapper {
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 80%;
+    min-width: 600px;
+    padding-bottom: 20px;
+}
+
+/* Makes the contact info smaller than normal text */
 #contact {
-	font-size: 90%;
+    font-size: 90%;
 }
+
 dt {
-	color: #000033;
+    color: #000033;
 }
+
+/* Makes footer copyright info smaller and a different font */
 footer {
-	font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 80%;
+    font-style: italic;
+    margin-top: 50px;
 }
